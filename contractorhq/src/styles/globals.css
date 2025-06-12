@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-white: #ffffff;
+  --color-theme-header:#ffffff;
+  --color-theme-hero:#0369a1;
+
+  --color-primary: #0369a1;
+  --color-primary-light: #0ea5e9;
+  --color-primary-lighter: #bae6fd;
+  --color-primary-dark: #075985;
+
+  --color-dark: #0f172a;
+  --color-light: #f8fafc;
+  --color-gray: #94a3b8;
+  --color-gray-light: #e2e8f0;
+
+  --color-accent: #0d9488;
+  --color-accent-light: #2dd4bf;
+  --color-accent-dark: #0f766e;
+
+  --color-success: #16a34a;
+  --color-error: #dc2626;
+
+  --color-gray-50:#f9fafb;
+  --color-gray-hundred: #f3f4f6;
+  --color-gray-five:#9E9E9E;
+  --color-gray-six:#4a5565;
+  --color-gray-7: #2d3748;
+
+  --color-hover-gray-50:#f9fafb;
+
+  --color-admin-auth:#EFF6FF;
+}
+
+.dark {
+  /* Backgrounds */
+  --color-theme-white: #0f0f1a; /* Dark navy base (slightly more modern than pure dark) */
+  --color-theme-header:#070728;
+  --color-theme-hero:#00293e;
+  
+  
+  /* Text & surfaces */
+  --color-dark: #f8fafc; /* Light text stays the same (good choice) */
+  --color-light: #111827; /* Dark background (slightly warmer dark) */
+  --color-gray-light: #1f2937; /* Card surfaces (tailwind's gray-800) */
+  
+  /* Grays */
+  --color-gray-50:#1c1c30;;
+  --color-gray-hundred: #1d1d27; /* Darker navy for subtle backgrounds */
+  --color-gray-five:#e5e7eb;
+  --color-gray-six: #e5e7eb; /* Light gray for secondary text */
+  --color-gray-7: #e5e7eb; /* Light gray for secondary text */
+  
+  /* Accents - these make dark mode pop more */
+  --color-primary: #38bdf8; /* Brighter primary for better visibility */
+  --color-primary-light: #7dd3fc; /* Lighter primary accent */
+  --color-primary-dark: #0369a1; /* Kept original for consistency */
+  
+  --color-accent: #2dd4bf; /* Brighter teal for accents */
+  --color-accent-light: #5eead4; /* Lighter teal */
+  --color-accent-dark: #0d9488; /* Kept original */
+  
+  /* Status colors - more vibrant in dark mode */
+  --color-success: #4ade80; /* Brighter green */
+  --color-error: #f87171; /* Softer red (better for dark backgrounds) */
+
+  --color-hover-gray-50:#191919; /* Darker hover:bg-gray-50*/
+
+  --color-admin-auth:#001f47;
+}
+
+
+/* Animation keyframes */
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-fade-slide-in {
+  animation: fade-slide-in linear both;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-duration: 1s;
+}
+
+/* Text highlight effect */
+.highlight-text::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.highlight-text:hover::before {
+  transform: scale(1.05);
+}
+
+@keyframes grid-pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(0) translateX(20px);
+  }
+  75% {
+    transform: translateY(20px) translateX(10px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+
+.animate-grid-pan {
+  animation: grid-pan 5s linear infinite;
+}
+
+@layer components {
+  .aspect-square {
+    aspect-ratio: 1/1;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.input {
+  @apply w-full px-3 py-2 border rounded-md text-sm;
+}
+
+@layer utilities {
+  .scrollbar-square {
+    scrollbar-width: thin;
+    scrollbar-color: #0ea5e9 #f3f4f6;
+  }
+
+  .scrollbar-square::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .scrollbar-square::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 0 !important;
+  }
+
+  .scrollbar-square::-webkit-scrollbar-thumb {
+    background-color: #0ea5e9;
+    border: 2px solid #f3f4f6;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .scrollbar-square::-webkit-scrollbar-corner {
+    background: #f3f4f6;
+    border-radius: 0 !important;
+  }
+}

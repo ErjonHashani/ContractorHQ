@@ -1,0 +1,26 @@
+[
+  {
+    "name": "DeWalt 20V MAX Circular Saw",
+    "price": 159.99,
+    "category": "saws",
+    "brand": "DeWalt",
+    "isOnSale": false,
+    "image": "/images/products/saw-dewalt-20v.png"
+  },
+  {
+    "name": "Milwaukee M18 Cordless Drill",
+    "price": 129.99,
+    "category": "drills",
+    "brand": "Milwaukee",
+    "isOnSale": false,
+    "image": "/images/products/drill-milwaukee-m18.png"
+  },
+  {
+    "name": "Makita 18V LXT Impact Driver",
+    "price": 119.99,
+    "category": "drivers",
+    "brand": "Makita",
+    "isOnSale": false,
+    "image": "/images/products/driver-makita-18v.png"
+  }
+]
