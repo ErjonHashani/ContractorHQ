@@ -33,7 +33,7 @@ interface Product {
 async function getProduct(id: string) {
   try {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
-      ? `https://${process.env.NEXT_PUBLIC_SITE_URL}`
+      ? `${process.env.NEXT_PUBLIC_SITE_URL}`
       : "http://localhost:3000";
 
     const res = await fetch(`${baseUrl}/api/products/${id}`);
