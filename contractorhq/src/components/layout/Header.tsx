@@ -69,7 +69,7 @@ export default function Header() {
             width={160}
             height={40}
             className="object-contain hidden lg:block"
-            priority
+            priority={true}
           />
           <Image
             src="/images/logos/contractor-logo.png"
@@ -149,7 +149,7 @@ export default function Header() {
                       <Image
                         src="/images/brands/makita-logo.png"
                         alt="Makita"
-                        fill
+                        fill={true}
                         className="object-contain object-left"
                         loading="lazy"
                       />
@@ -163,7 +163,7 @@ export default function Header() {
                       <Image
                         src="/images/brands/dewalt-logo.png"
                         alt="DeWalt"
-                        fill
+                        fill={true}
                         className="object-contain object-left"
                         sizes="120px"
                         loading="lazy"
@@ -178,7 +178,7 @@ export default function Header() {
                       <Image
                         src="/images/brands/milwaukee-logo.png"
                         alt="Milwaukee"
-                        fill
+                        fill={true}
                         className="object-contain object-left"
                         sizes="120px"
                         loading="lazy"
@@ -309,6 +309,7 @@ export default function Header() {
 
       {/* Mobile menu panel */}
       <div
+        data-testid="mobile-menu-panel"
         className={`lg:hidden fixed inset-0 top-[75px] bg-light z-40 overflow-y-auto transition-transform duration-300 ease-in-out ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}

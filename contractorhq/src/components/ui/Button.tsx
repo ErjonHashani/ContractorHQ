@@ -10,8 +10,9 @@ const variantStyles = {
   ghost: "text-primary hover:bg-primary-lighter",
   nav: "text-dark hover:text-primary hover:bg-transparent p-0 h-auto",
   icon: "p-2 text-gray-600 hover:text-primary",
-  cartIcon: "p-1 rounded border bg-white border-gray-300 text-indigo-600 hover:bg-indigo-100 hover:border-indigo-400",
-  user: "rounded-full transition-colors duration-200 cursor-pointer active:scale-95"
+  cartIcon:
+    "p-1 rounded border bg-white border-gray-300 text-indigo-600 hover:bg-indigo-100 hover:border-indigo-400",
+  user: "rounded-full transition-colors duration-200 cursor-pointer active:scale-95",
 };
 
 const sizeStyles = {
@@ -58,7 +59,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       {...props}
     >
       {loading && (
-        <FaSpinner className="h-4 w-4 animate-spin -ml-1 mr-2" />
+        <FaSpinner
+          className="h-4 w-4 animate-spin -ml-1 mr-2"
+          aria-label="loading spinner"
+        />
       )}
       {children}
     </button>
