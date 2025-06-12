@@ -1,3 +1,4 @@
+// babel-jest.config.js
 module.exports = {
   presets: [
     "@babel/preset-env",
