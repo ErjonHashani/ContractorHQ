@@ -21,7 +21,7 @@ export async function GET(req: NextRequest) {
         { name: { $regex: q, $options: "i" } },
         { brand: { $regex: q, $options: "i" } },
         { category: { $regex: q, $options: "i" } },
-        { description: { $regex: q, $options: "i" } }, // only if you have this field
+        { description: { $regex: q, $options: "i" } },
       ];
     }
 

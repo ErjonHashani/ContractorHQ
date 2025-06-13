@@ -24,7 +24,7 @@ export function useFetchProducts() {
     try {
       const url =
         typeof window !== "undefined"
-          ? `${window.location.origin}/api/products`
+          ? `${process.env.NEXT_PUBLIC_SITE_URL}/api/products`
           : "/api/products"; // fallback
 
       const res = await fetch(url);

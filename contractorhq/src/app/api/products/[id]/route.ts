@@ -8,7 +8,7 @@ export async function GET(
   context: { params: { id: string } }
 ) {
   try {
-    const { id } = await context.params; // ✅ await here
+    const { id } = await context.params;
     await connectToDatabase();
     const product = await Product.findById(id);
     if (!product) {
@@ -29,7 +29,7 @@ export async function DELETE(
   context: { params: { id: string } }
 ) {
   try {
-    const { id } = await context.params; // ✅ await here
+    const { id } = await context.params;
     await connectToDatabase();
     await Product.findByIdAndDelete(id);
     return NextResponse.json({ message: "Product deleted" });
@@ -45,7 +45,7 @@ export async function PATCH(
   context: { params: { id: string } }
 ) {
   try {
-    const { id } = await context.params; // ✅ await here
+    const { id } = await context.params;
     await connectToDatabase();
     const updates = await request.json();
     const updatedProduct = await Product.findByIdAndUpdate(id, updates, {
