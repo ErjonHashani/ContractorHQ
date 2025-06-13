@@ -295,10 +295,25 @@ export default function ProductPageWrapper() {
                 <BsCart3 />
                 Add to Cart
               </Button>
-              <button className="flex-1 border border-primary text-primary hover:bg-primary/5 py-3 px-6 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
+              <Button
+                className="flex-1 border border-primary text-primary hover:bg-primary/5 py-3 px-6 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2"
+                onClick={(e) => {
+                  e.preventDefault();
+                  addToCart(
+                    {
+                      _id: product._id,
+                      name: product.name,
+                      price: product.price,
+                      image: product.image,
+                    },
+                    1 
+                  );
+                  router.push("/cart"); 
+                }}
+              >
                 <HiOutlineShoppingBag />
                 Buy Now
-              </button>
+              </Button>
             </div>
 
             {/* Product Details Accordion */}
