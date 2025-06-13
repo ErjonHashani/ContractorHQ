@@ -296,7 +296,7 @@ export default function ProductPageWrapper() {
                 Add to Cart
               </Button>
               <Button
-                className="flex-1 border border-primary text-primary hover:bg-primary/5 py-3 px-6 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2"
+                className="flex-1 border border-primary text-primary bg-blue-200 hover:bg-primary/10 py-3 px-6 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2"
                 onClick={(e) => {
                   e.preventDefault();
                   addToCart(
