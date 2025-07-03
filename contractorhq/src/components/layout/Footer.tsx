@@ -75,7 +75,7 @@ export default function Footer() {
               Support
             </h3>
             <ul className="space-y-3">
-              {["Contact Us", "FAQ", "Returns Policy", "Shipping Info"].map(
+              {["Contact Us", "FAQ", "Returns Policy"].map(
                 (item) => (
                   <li key={item}>
                     <Link
