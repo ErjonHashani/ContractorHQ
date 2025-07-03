@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/ui/HeroSection";
 import Footer from "@/components/layout/Footer";
 import FeaturedSection from "@/components/ui/FeaturedProducts";
+import CustomerReviews from "@/components/ui/CustomerReviews";
 
 interface Product {
   _id: string;
@@ -53,6 +54,7 @@ export default async function Home() {
         <section>
           <HeroSection />
           <FeaturedSection products={products} />
+          <CustomerReviews />
           <Footer/>
         </section>
     </>
