@@ -75,7 +75,7 @@ export default async function BlogListPage() {
                 </p>
                 <Button
                   variant="ghost"
-                  className="group flex items-center text-indigo-600 hover:text-indigo-700 px-0"
+                  className="group flex items-center text-primary hover:text-primary-light px-0"
                 >
                   <Link href={`/blogs/${blog._id}`} className="flex items-center space-x-1">
                     Read more

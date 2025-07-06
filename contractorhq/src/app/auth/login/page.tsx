@@ -66,7 +66,7 @@ export default function LoginPage() {
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen p-4">
-        <div className="w-full max-w-md bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+        <div className="w-full max-w-md bg-light backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
           <div className="p-8">
             <div className="flex justify-center mb-6">
               <div className="w-20 h-20 rounded-full bg-blue-50/80 flex items-center justify-center border-4 border-white shadow-md">
@@ -74,7 +74,7 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
+            <h2 className="text-3xl font-bold text-center text-gray-7 mb-2">
               Welcome Back
             </h2>
             <p className="text-center text-gray-500 mb-8">
@@ -101,7 +101,7 @@ export default function LoginPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="block w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                    className="block w-full pl-10 pr-4 py-3 text-dark border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   />
                 </div>
               </div>
@@ -136,7 +136,7 @@ export default function LoginPage() {
                   <input
                     id="remember-me"
                     type="checkbox"
-                    className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                    className="h-4 w-4 bg-white text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                   />
                   <label
                     htmlFor="remember-me"

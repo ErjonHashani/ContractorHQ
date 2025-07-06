@@ -93,7 +93,7 @@ export default function RegisterPage() {
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen p-4 my-20">
-        <div className="w-full max-w-md bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+        <div className="w-full max-w-md bg-light backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
           <div className="p-8">
             <div className="flex justify-center mb-6">
               <div className="w-20 h-20 rounded-full bg-blue-50/80 flex items-center justify-center border-4 border-white shadow-md">
@@ -101,7 +101,7 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
+            <h2 className="text-3xl font-bold text-center text-gray-7 mb-2">
               Join Our Community
             </h2>
             <p className="text-center text-gray-500 mb-8">
