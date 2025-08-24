@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/Button";
 export default function SupportPage() {
   return (
     <>
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-12 bg-light">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-dark mb-4">Support Center</h1>
@@ -26,21 +26,21 @@ export default function SupportPage() {
           <Button
             variant="ghost"
             size="lg"
-            className="border border-gray-200 hover:border-primary-lighter"
+            className="border border-gray-light hover:border-primary-lighter cursor-pointer"
           >
             <a href="#contact">Contact Us</a>
           </Button>
           <Button
             variant="ghost"
             size="lg"
-            className="border border-gray-200 hover:border-primary-lighter"
+            className="border border-gray-light hover:border-primary-lighter cursor-pointer"
           >
             <a href="#faq">FAQ</a>
           </Button>
           <Button
             variant="ghost"
             size="lg"
-            className="border border-gray-200 hover:border-primary-lighter"
+            className="border border-gray-light hover:border-primary-lighter cursor-pointer"
           >
             <a href="#returns">Returns Policy</a>
           </Button>
@@ -52,13 +52,13 @@ export default function SupportPage() {
             <ContactUs />
           </section>
 
-          <div className="border-t border-gray-200"></div>
+          <div className="border-t border-gray-light"></div>
 
           <section id="faq" className="scroll-mt-20">
             <FAQ />
           </section>
 
-          <div className="border-t border-gray-200"></div>
+          <div className="border-t border-gray-light"></div>
 
           <section id="returns" className="scroll-mt-20">
             <ReturnsPolicy />

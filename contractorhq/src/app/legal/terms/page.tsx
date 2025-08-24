@@ -1,17 +1,18 @@
+import Link from "next/link";
 import React from "react";
 
 const TermsPage = () => {
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg my-8">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+    <div className="max-w-3xl mx-auto p-6 bg-light shadow-lg rounded-lg my-8">
+      <h1 className="text-3xl font-bold text-center text-dark mb-6">
         Terms and Conditions
       </h1>
       <p className="text-center text-gray-500 mb-6">
-        <strong>Effective Date: [Date]</strong>
+        <strong>Effective Date: {new Date().toLocaleDateString()}</strong>
       </p>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           1. Introduction
         </h2>
         <p className="text-gray-600 mt-2">
@@ -23,7 +24,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           2. User Accounts & Registration
         </h2>
         <p className="text-gray-600 mt-2">
@@ -50,7 +51,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           3. Data Collection and Privacy
         </h2>
         <p className="text-gray-600 mt-2">
@@ -85,7 +86,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           4. Products and Content
         </h2>
         <ul className="list-inside list-disc text-gray-600 mt-4">
@@ -112,7 +113,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           5. Orders and Payments
         </h2>
         <ul className="list-inside list-disc text-gray-600 mt-4">
@@ -153,7 +154,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           6. Blogs, News, and User-Generated Content
         </h2>
         <ul className="list-inside list-disc text-gray-600 mt-4">
@@ -179,7 +180,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           7. Shipping and Delivery
         </h2>
         <ul className="list-inside list-disc text-gray-600 mt-4">
@@ -203,7 +204,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           8. Limitation of Liability
         </h2>
         <ul className="list-inside list-disc text-gray-600 mt-4">
@@ -225,7 +226,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           9. Prohibited Uses
         </h2>
         <p className="text-gray-600 mt-2">
@@ -247,7 +248,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           10. Termination
         </h2>
         <p className="text-gray-600 mt-2">
@@ -259,7 +260,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           11. Governing Law
         </h2>
         <p className="text-gray-600 mt-2">
@@ -271,7 +272,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           12. Changes to Terms
         </h2>
         <p className="text-gray-600 mt-2">
@@ -283,7 +284,7 @@ const TermsPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           13. Contact Information
         </h2>
         <p className="text-gray-600 mt-2">
@@ -293,18 +294,18 @@ const TermsPage = () => {
         <ul className="list-inside list-disc text-gray-600 mt-4">
           <li>
             <strong>Email:</strong>{" "}
-            <a
+            <Link
               href="mailto:support@contractorhq.com"
               className="text-blue-600 hover:underline"
             >
-              support@contractorhq.com
-            </a>
+              erjonndev@gmail.com
+            </Link>
           </li>
           <li>
-            <strong>Phone:</strong> [Your Business Phone Number]
+            <strong>Phone:</strong> +1 415-555-2671
           </li>
           <li>
-            <strong>Address:</strong> [Your Business Address]
+            <strong>Address:</strong> 123 Contractor St, San Francisco, CA 94105
           </li>
         </ul>
       </section>

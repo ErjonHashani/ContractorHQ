@@ -65,19 +65,19 @@ export default function BrandPage() {
   const brandColorClass = brandColors[brand as BrandName] || "text-gray-900";
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-light">
       <div className="container mx-auto px-4 sm:px-6 py-12">
         {/* Header Section */}
         <div className="mb-12 flex flex-col md:flex-row items-center justify-center">
           <div className="inline-block bg-white p-3 rounded-xl shadow-sm mb-6">
-            <h1 className="text-4xl font-bold">
+            <h1 className="text-4xl font-bold text-gray-800">
               <span className={brandColorClass}>{brand}</span> Products
             </h1>
           </div>
 
           <Button
             onClick={() => router.push("/brands")}
-            className="group md:absolute left-5 inline-flex justify-center items-center gap-2 px-5 py-2.5 border border-gray-200 rounded-lg shadow-xs hover:shadow-sm transition-all mb-8"
+            className="group md:absolute left-5 inline-flex justify-center items-center gap-2 px-5 py-2.5 border border-gray-light rounded-lg shadow-xs hover:shadow-sm transition-all mb-8"
             variant="secondary"
           >
             <svg
@@ -146,7 +146,7 @@ export default function BrandPage() {
             </div>
           ) : (
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-lg font-medium text-gray-700">
+              <h2 className="text-lg font-medium text-gray-7">
                 Showing <span className="font-semibold">{products.length}</span>{" "}
                 products
               </h2>

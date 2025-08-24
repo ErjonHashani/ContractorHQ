@@ -2,16 +2,16 @@ import React from "react";
 
 const PrivacyPolicyPage = () => {
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg my-8">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+    <div className="max-w-3xl mx-auto p-6 bg-light shadow-lg rounded-lg my-8">
+      <h1 className="text-3xl font-bold text-center text-dark mb-6">
         Privacy Policy
       </h1>
       <p className="text-center text-gray-500 mb-6">
-        <strong>Effective Date: [Date]</strong>
+        <strong>Effective Date: {new Date().toLocaleDateString()}</strong>
       </p>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           1. Introduction
         </h2>
         <p className="text-gray-600 mt-2">
@@ -24,7 +24,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           2. Information We Collect
         </h2>
         <ul className="list-inside list-disc text-gray-600 mt-4">
@@ -49,7 +49,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           3. How We Use Your Information
         </h2>
         <ul className="list-inside list-disc text-gray-600 mt-4">
@@ -69,7 +69,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           4. Data Sharing and Disclosure
         </h2>
         <p className="text-gray-600 mt-2">
@@ -89,7 +89,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           5. Cookies and Tracking Technologies
         </h2>
         <p className="text-gray-600 mt-2">
@@ -107,7 +107,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           6. Data Security
         </h2>
         <p className="text-gray-600 mt-2">
@@ -119,7 +119,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">7. User Rights</h2>
+        <h2 className="text-2xl font-semibold text-gray-7">7. User Rights</h2>
         <p className="text-gray-600 mt-2">
           You have the right to access, correct, or delete your personal
           information. You can also request to transfer your data to another
@@ -134,7 +134,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           8. Third-Party Links
         </h2>
         <p className="text-gray-600 mt-2">
@@ -144,7 +144,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           9. Data Retention
         </h2>
         <p className="text-gray-600 mt-2">
@@ -154,7 +154,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">
+        <h2 className="text-2xl font-semibold text-gray-7">
           10. Changes to This Privacy Policy
         </h2>
         <p className="text-gray-600 mt-2">
@@ -164,7 +164,7 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-700">11. Contact Us</h2>
+        <h2 className="text-2xl font-semibold text-gray-7">11. Contact Us</h2>
         <p className="text-gray-600 mt-2">
           If you have any questions or concerns about this Privacy Policy,
           please contact us at:
@@ -180,10 +180,10 @@ const PrivacyPolicyPage = () => {
             </a>
           </li>
           <li>
-            <strong>Phone:</strong> [Your Business Phone Number]
+            <strong>Phone:</strong> +1 415-555-2671
           </li>
           <li>
-            <strong>Address:</strong> [Your Business Address]
+            <strong>Address:</strong> 123 Contractor St, San Francisco, CA 94105
           </li>
         </ul>
       </section>

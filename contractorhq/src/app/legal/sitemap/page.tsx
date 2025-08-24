@@ -11,7 +11,7 @@ const SitemapPage = () => {
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <Link
             href="/"
-            className="block p-6 text-center hover:bg-gray-50 transition-colors"
+            className="block p-6 text-center transition-colors"
           >
             <h2 className="text-2xl font-semibold text-accent mb-4">Home</h2>
             <p className="text-gray-600">
@@ -24,7 +24,7 @@ const SitemapPage = () => {
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <Link
             href="/shop"
-            className="block p-6 text-center hover:bg-gray-50 transition-colors"
+            className="block p-6 text-center transition-colors"
           >
             <h2 className="text-2xl font-semibold text-accent mb-4">Shop</h2>
             <p className="text-gray-600">
@@ -38,7 +38,7 @@ const SitemapPage = () => {
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <Link
             href="/brands"
-            className="block p-6 text-center hover:bg-gray-50 transition-colors"
+            className="block p-6 text-center transition-colors"
           >
             <h2 className="text-2xl font-semibold text-accent mb-4">Brands</h2>
             <p className="text-gray-600">
@@ -52,7 +52,7 @@ const SitemapPage = () => {
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <Link
             href="/about"
-            className="block p-6 text-center hover:bg-gray-50 transition-colors"
+            className="block p-6 text-center transition-colors"
           >
             <h2 className="text-2xl font-semibold text-accent mb-4">
               About Us
@@ -66,7 +66,7 @@ const SitemapPage = () => {
 
         {/* Support Card */}
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div className="p-6 flex items-center text-center flex-col hover:bg-gray-50 transition-colors">
+          <div className="p-6 flex items-center text-center flex-col transition-colors">
             <h2 className="text-2xl font-semibold text-accent mb-4">Support</h2>
             <p className="text-gray-600 mb-4">
               Get help with any questions or issues you may have. Choose one of
@@ -100,7 +100,7 @@ const SitemapPage = () => {
         <div className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <Link
             href="/legal"
-            className="block p-6 text-center hover:bg-gray-50 transition-colors"
+            className="block p-6 text-center transition-colors"
           >
             <h2 className="text-2xl font-semibold text-accent mb-4">Legal</h2>
             <p className="text-gray-600">

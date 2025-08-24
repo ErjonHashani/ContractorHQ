@@ -38,7 +38,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+    <div className="bg-light p-8 rounded-xl shadow-sm border border-gray-light">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-dark mb-3">
           Frequently Asked Questions
@@ -53,7 +53,7 @@ export default function FAQ() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={`border border-gray-200 rounded-lg overflow-hidden transition-all ${
+            className={`border border-gray-light rounded-lg overflow-hidden transition-all ${
               openIndex === index ? "bg-primary-lighter/10" : ""
             }`}
           >
@@ -79,7 +79,7 @@ export default function FAQ() {
               </svg>
             </button>
             {openIndex === index && (
-              <div className="px-5 pb-5 text-gray-600">
+              <div className="px-5 pb-5 pt-5 text-gray-six">
                 <p>{faq.answer}</p>
               </div>
             )}

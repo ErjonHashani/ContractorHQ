@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const LegalPage = () => {
   return (
-    <div className="max-w-4xl mx-auto min-h-screen p-6">
+    <div className="max-w-4xl mx-auto min-h-screen p-6 bg-gray-light">
       <h1 className="text-4xl font-bold text-gray-800 mb-12">
         Legal Information
       </h1>

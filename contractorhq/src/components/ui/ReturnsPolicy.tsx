@@ -1,7 +1,7 @@
 // app/components/ui/ReturnsPolicy.tsx
 export default function ReturnsPolicy() {
   return (
-    <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+    <div className="bg-light p-8 rounded-xl shadow-sm border border-gray-light">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-dark mb-3">
           Returns & Refunds Policy
@@ -17,7 +17,7 @@ export default function ReturnsPolicy() {
           <h3 className="font-semibold text-primary-dark mb-3">
             Our Return Policy
           </h3>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <ul className="list-disc list-inside text-gray-7 space-y-2">
             <li>
               Items can be returned within 30 days of delivery for a full
               refund.
@@ -38,7 +38,7 @@ export default function ReturnsPolicy() {
           <h3 className="font-semibold text-dark mb-3">
             How to Return an Item
           </h3>
-          <ol className="list-decimal list-inside text-gray-700 space-y-2">
+          <ol className="list-decimal list-inside text-gray-7 space-y-2">
             <li>Contact our support team to request a return authorization.</li>
             <li>Package the item securely in its original packaging.</li>
             <li>Include the return authorization form in your package.</li>

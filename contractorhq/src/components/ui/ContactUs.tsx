@@ -40,7 +40,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+    <div className="bg-light p-8 rounded-xl shadow-sm border border-gray-light">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-dark mb-3">Contact Us</h2>
         <p className="text-gray-600">
@@ -53,7 +53,7 @@ export default function ContactUs() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-gray-7 mb-1"
           >
             Your Name
           </label>
@@ -63,7 +63,7 @@ export default function ContactUs() {
             type="text"
             value={form.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition"
+            className="w-full px-4 py-3 border border-gray-light rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition"
             required
           />
         </div>
@@ -71,7 +71,7 @@ export default function ContactUs() {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-gray-7 mb-1"
           >
             Email Address
           </label>
@@ -81,7 +81,7 @@ export default function ContactUs() {
             type="email"
             value={form.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition"
+            className="w-full px-4 py-3 border border-gray-light rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition"
             required
           />
         </div>
@@ -89,7 +89,7 @@ export default function ContactUs() {
         <div>
           <label
             htmlFor="message"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-gray-7 mb-1"
           >
             Your Message
           </label>
@@ -99,7 +99,7 @@ export default function ContactUs() {
             rows={5}
             value={form.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition"
+            className="w-full px-4 py-3 border border-gray-light rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition"
             required
           />
         </div>
