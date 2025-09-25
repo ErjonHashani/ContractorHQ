@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
 import { Toaster } from "react-hot-toast";
 import Providers from "@/components/provider/Providers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <SpeedInsights />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
